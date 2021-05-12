@@ -51,6 +51,7 @@ const userSchema = new mongoose.Schema({
 	],
 });
 
+// methods=instance access
 userSchema.methods.generateAuthToken = async function () {
 	const user = this;
 	const token = jwt.sign({ _id: user._id.toString() }, 'thisismynewcourse');
@@ -61,6 +62,7 @@ userSchema.methods.generateAuthToken = async function () {
 	return token;
 };
 
+// static=direct access
 userSchema.statics.findByCredentials = async (email, password) => {
 	const user = await User.findOne({ email });
 
