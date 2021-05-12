@@ -54,6 +54,8 @@ app.listen(port, () => {
 
 // myFunction();
 
+// populate(): connecting collections
+
 // const main = async () => {
 // 	// const task = await Task.findById('609bff7df870316138e37a69');
 // 	// await task.populate('owner').execPopulate();
