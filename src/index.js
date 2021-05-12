@@ -39,17 +39,29 @@ app.listen(port, () => {
 //     console.log(isMatch)
 // }
 
-const jwt = require('jsonwebtoken');
-const { response } = require('express');
+// const jwt = require('jsonwebtoken');
+// const { response } = require('express');
 
-const myFunction = async () => {
-	const token = jwt.sign({ _id: 'abc123' }, 'thisismynewcourse', {
-		expiresIn: '7 days',
-	});
-	console.log(token);
+// const myFunction = async () => {
+// 	const token = jwt.sign({ _id: 'abc123' }, 'thisismynewcourse', {
+// 		expiresIn: '7 days',
+// 	});
+// 	console.log(token);
 
-	const data = jwt.verify(token, 'thisismynewcourse');
-	console.log(data);
-};
+// 	const data = jwt.verify(token, 'thisismynewcourse');
+// 	console.log(data);
+// };
 
-myFunction();
+// myFunction();
+
+// const main = async () => {
+// 	// const task = await Task.findById('609bff7df870316138e37a69');
+// 	// await task.populate('owner').execPopulate();
+// 	// console.log(task.owner);
+
+// 	const user = await User.findById('609bf9e235c00959acdab23d');
+// 	await user.populate('tasks').execPopulate();
+// 	console.log(user.tasks);
+// };
+
+// main();
